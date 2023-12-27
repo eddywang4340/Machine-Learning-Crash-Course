@@ -21,7 +21,7 @@ def train_model(model, feature, label, epochs, batch_size):
                       batch_size=batch_size,
                       epochs=epochs)
   
-  trained_weight = model.get_weights()[0]
+  trained_weight = model.get_weights()[0][0]
   trained_bias = model.get_weights()[1]
 
   epochs = history.epoch

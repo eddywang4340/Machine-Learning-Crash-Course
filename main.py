@@ -1,8 +1,8 @@
 from model import build_model, train_model
 from plot import plot_the_loss_curve, plot_the_model
 
-learning_rate=0.01
-epochs=15
+learning_rate=0.15
+epochs=60
 my_batch_size=12
 
 my_feature = [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0]

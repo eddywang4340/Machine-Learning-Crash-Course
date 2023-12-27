@@ -8,11 +8,16 @@ def plot_the_model(trained_weight, trained_bias, feature, label):
 
   plt.scatter(feature, label)
 
+  print(trained_bias)
+  print(trained_weight)
+
   x0 = 0
   y0 = trained_bias
   x1 = feature[-1]
   y1 = trained_bias + (trained_weight * x1)
-  plt.plot([x0, x1], [y0, y1], c='r')
+  x_values = [x0, x1]
+  y_values = [y0, y1]
+  plt.plot(x_values, y_values, c='r')
   plt.show()
 
 def plot_the_loss_curve(epochs, rmse):
